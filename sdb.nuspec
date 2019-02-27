@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>InfinitespaceStudios.Mono.SoftDebugger</id>
-    <version>1.0.9</version>
+    <version>0.0.1</version>
     <title>Infinitespace Studios Mono Soft Debugger Command Line Tool</title>
     <authors>Dean Ellis</authors>
     <owners>www.infinitespace-studios.co.uk</owners>
