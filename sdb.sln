@@ -1,0 +1,64 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sdb", "sdb.csproj", "{7BF0F6B8-5A4F-4DD3-97FB-E412C5519470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Debugging.Soft", "dep\debugger-libs\Mono.Debugging.Soft\Mono.Debugging.Soft.csproj", "{DE40756E-57F6-4AF2-B155-55E3A88CCED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Debugging", "dep\debugger-libs\Mono.Debugging\Mono.Debugging.csproj", "{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Debugger.Soft", "dep\debugger-libs\Mono.Debugger.Soft\Mono.Debugger.Soft.csproj", "{372E8E3E-29D5-4B4D-88A2-4711CD628C4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deps", "deps", "{6007CE0F-D02B-4644-9CF4-93555718584D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "debugger-libs", "debugger-libs", "{14FC6698-2BF3-4B5B-9447-5409C85559CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nrefactory", "nrefactory", "{538253BC-E421-4057-AA11-9ECBD7CDAC25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.NRefactory", "dep\nrefactory\ICSharpCode.NRefactory\ICSharpCode.NRefactory.csproj", "{3B2A5653-EC97-4001-BB9B-D90F1AF2C371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.NRefactory.CSharp", "dep\nrefactory\ICSharpCode.NRefactory.CSharp\ICSharpCode.NRefactory.CSharp.csproj", "{53DCA265-3C3C-42F9-B647-F72BA678122B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		net_4_5_Debug|Any CPU = net_4_5_Debug|Any CPU
+		net_4_5_Release|Any CPU = net_4_5_Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BF0F6B8-5A4F-4DD3-97FB-E412C5519470}.Debug|x86.ActiveCfg = Debug|x86
+		{7BF0F6B8-5A4F-4DD3-97FB-E412C5519470}.Debug|x86.Build.0 = Debug|x86
+		{7BF0F6B8-5A4F-4DD3-97FB-E412C5519470}.Release|x86.ActiveCfg = Release|x86
+		{7BF0F6B8-5A4F-4DD3-97FB-E412C5519470}.Release|x86.Build.0 = Release|x86
+		{DE40756E-57F6-4AF2-B155-55E3A88CCED8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DE40756E-57F6-4AF2-B155-55E3A88CCED8}.Debug|x86.Build.0 = Debug|Any CPU
+		{DE40756E-57F6-4AF2-B155-55E3A88CCED8}.Release|x86.ActiveCfg = Release|Any CPU
+		{DE40756E-57F6-4AF2-B155-55E3A88CCED8}.Release|x86.Build.0 = Release|Any CPU
+		{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2}.Debug|x86.Build.0 = Debug|Any CPU
+		{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2}.Release|x86.ActiveCfg = Release|Any CPU
+		{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2}.Release|x86.Build.0 = Release|Any CPU
+		{372E8E3E-29D5-4B4D-88A2-4711CD628C4E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{372E8E3E-29D5-4B4D-88A2-4711CD628C4E}.Debug|x86.Build.0 = Debug|Any CPU
+		{372E8E3E-29D5-4B4D-88A2-4711CD628C4E}.Release|x86.ActiveCfg = Release|Any CPU
+		{372E8E3E-29D5-4B4D-88A2-4711CD628C4E}.Release|x86.Build.0 = Release|Any CPU
+		{3B2A5653-EC97-4001-BB9B-D90F1AF2C371}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3B2A5653-EC97-4001-BB9B-D90F1AF2C371}.Debug|x86.Build.0 = Debug|Any CPU
+		{3B2A5653-EC97-4001-BB9B-D90F1AF2C371}.Release|x86.ActiveCfg = Release|Any CPU
+		{3B2A5653-EC97-4001-BB9B-D90F1AF2C371}.Release|x86.Build.0 = Release|Any CPU
+		{53DCA265-3C3C-42F9-B647-F72BA678122B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{53DCA265-3C3C-42F9-B647-F72BA678122B}.Debug|x86.Build.0 = Debug|Any CPU
+		{53DCA265-3C3C-42F9-B647-F72BA678122B}.Release|x86.ActiveCfg = Release|Any CPU
+		{53DCA265-3C3C-42F9-B647-F72BA678122B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14FC6698-2BF3-4B5B-9447-5409C85559CD} = {6007CE0F-D02B-4644-9CF4-93555718584D}
+		{372E8E3E-29D5-4B4D-88A2-4711CD628C4E} = {14FC6698-2BF3-4B5B-9447-5409C85559CD}
+		{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2} = {14FC6698-2BF3-4B5B-9447-5409C85559CD}
+		{DE40756E-57F6-4AF2-B155-55E3A88CCED8} = {14FC6698-2BF3-4B5B-9447-5409C85559CD}
+		{538253BC-E421-4057-AA11-9ECBD7CDAC25} = {6007CE0F-D02B-4644-9CF4-93555718584D}
+		{3B2A5653-EC97-4001-BB9B-D90F1AF2C371} = {538253BC-E421-4057-AA11-9ECBD7CDAC25}
+		{53DCA265-3C3C-42F9-B647-F72BA678122B} = {538253BC-E421-4057-AA11-9ECBD7CDAC25}
+	EndGlobalSection
+EndGlobal

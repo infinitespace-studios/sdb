@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>InfinitespaceStudios.Mono.SoftDebugger</id>
+    <version>1.0.9</version>
+    <title>Infinitespace Studios Mono Soft Debugger Command Line Tool</title>
+    <authors>Dean Ellis</authors>
+    <owners>www.infinitespace-studios.co.uk</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl> https://github.com/infinitespace-studios/sdb</projectUrl>
+    <iconUrl>https://avatars1.githubusercontent.com/u/6338296</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      This package contains a command line version of the Mono Soft Debugger
+    </description>
+    <releaseNotes>
+      * Initial Release
+    </releaseNotes>
+    <copyright>Copyright Infinitespace Studios 2018</copyright>
+    <tags></tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+    <files>
+      <file src="bin/Release/sdb.exe" target="tools/sdb.exe" />
+      <file src="bin/Release/Mono.Debugging.Soft.dll" target="tools/Mono.Debugging.Soft.dll" />
+      <file src="bin/Release/Mono.Debugging.dll" target="tools/Mono.Debugging.dll" />
+      <file src="bin/Release/Mono.Debugger.Soft.dll" target="tools/Mono.Debugger.Soft.dll" />
+      <file src="bin/Release/Mono.Cecil.Mdb.dll" target="tools/Mono.Cecil.Mdb.dll" />
+      <file src="bin/Release/Mono.Cecil.dll" target="tools/Mono.Cecil.dll" />
+      <file src="bin/Release/Microsoft.CodeAnalysis.dll" target="tools/Microsoft.CodeAnalysis.dll" />
+      <file src="bin/Release/Microsoft.CodeAnalysis.CSharp.dll" target="tools/Microsoft.CodeAnalysis.CSharp.dll" />
+      <file src="bin/Release/ICSharpCode.NRefactory.dll" target="tools/ICSharpCode.NRefactory.dll" />
+      <file src="bin/Release/ICSharpCode.NRefactory.CSharp.dll" target="tools/ICSharpCode.NRefactory.CSharp.dll" />
+    </files>
+</package>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7BF0F6B8-5A4F-4DD3-97FB-E412C5519470}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>sdb</RootNamespace>
+    <AssemblyName>sdb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Mono.CompilerServices.SymbolWriter" />
+    <Reference Include="Mono.Posix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AssemblyInfo.cs" />
+    <Compile Include="src\Color.cs" />
+    <Compile Include="src\Command.cs" />
+    <Compile Include="src\CommandAttribute.cs" />
+    <Compile Include="src\CommandLine.cs" />
+    <Compile Include="src\Configuration.cs" />
+    <Compile Include="src\CustomLogger.cs" />
+    <Compile Include="src\Debugger.cs" />
+    <Compile Include="src\LibEdit.cs" />
+    <Compile Include="src\Log.cs" />
+    <Compile Include="src\MultiCommand.cs" />
+    <Compile Include="src\Options.cs" />
+    <Compile Include="src\Plugins.cs" />
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\SessionKind.cs" />
+    <Compile Include="src\State.cs" />
+    <Compile Include="src\Utilities.cs" />
+    <Compile Include="src\getline.cs" />
+    <Compile Include="src\Commands\AliasCommand.cs" />
+    <Compile Include="src\Commands\ArgumentsCommand.cs" />
+    <Compile Include="src\Commands\AttachCommand.cs" />
+    <Compile Include="src\Commands\BacktraceCommand.cs" />
+    <Compile Include="src\Commands\BreakpointCommand.cs" />
+    <Compile Include="src\Commands\CatchpointCommand.cs" />
+    <Compile Include="src\Commands\ConfigCommand.cs" />
+    <Compile Include="src\Commands\ConnectCommand.cs" />
+    <Compile Include="src\Commands\ContinueCommand.cs" />
+    <Compile Include="src\Commands\DatabaseCommand.cs" />
+    <Compile Include="src\Commands\DecompileCommand.cs" />
+    <Compile Include="src\Commands\DirectoryCommand.cs" />
+    <Compile Include="src\Commands\DisassembleCommand.cs" />
+    <Compile Include="src\Commands\DoCommand.cs" />
+    <Compile Include="src\Commands\EnvironmentCommand.cs" />
+    <Compile Include="src\Commands\FrameCommand.cs" />
+    <Compile Include="src\Commands\HelpCommand.cs" />
+    <Compile Include="src\Commands\JumpCommand.cs" />
+    <Compile Include="src\Commands\KillCommand.cs" />
+    <Compile Include="src\Commands\ListenCommand.cs" />
+    <Compile Include="src\Commands\PluginCommand.cs" />
+    <Compile Include="src\Commands\PrintCommand.cs" />
+    <Compile Include="src\Commands\QuitCommand.cs" />
+    <Compile Include="src\Commands\ResetCommand.cs" />
+    <Compile Include="src\Commands\RootCommand.cs" />
+    <Compile Include="src\Commands\RunCommand.cs" />
+    <Compile Include="src\Commands\SourceCommand.cs" />
+    <Compile Include="src\Commands\StepCommand.cs" />
+    <Compile Include="src\Commands\ThreadCommand.cs" />
+    <Compile Include="src\Commands\WatchCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="dep\debugger-libs\Mono.Debugger.Soft\Mono.Debugger.Soft.csproj">
+      <Project>{372E8E3E-29D5-4B4D-88A2-4711CD628C4E}</Project>
+      <Name>Mono.Debugger.Soft</Name>
+    </ProjectReference>
+    <ProjectReference Include="dep\debugger-libs\Mono.Debugging\Mono.Debugging.csproj">
+      <Project>{90C99ADB-7D4B-4EB4-98C2-40BD1B14C7D2}</Project>
+      <Name>Mono.Debugging</Name>
+    </ProjectReference>
+    <ProjectReference Include="dep\debugger-libs\Mono.Debugging.Soft\Mono.Debugging.Soft.csproj">
+      <Project>{DE40756E-57F6-4AF2-B155-55E3A88CCED8}</Project>
+      <Name>Mono.Debugging.Soft</Name>
+    </ProjectReference>
+    <ProjectReference Include="dep\nrefactory\ICSharpCode.NRefactory\ICSharpCode.NRefactory.csproj">
+      <Project>{3B2A5653-EC97-4001-BB9B-D90F1AF2C371}</Project>
+      <Name>ICSharpCode.NRefactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="dep\nrefactory\ICSharpCode.NRefactory.CSharp\ICSharpCode.NRefactory.CSharp.csproj">
+      <Project>{53DCA265-3C3C-42F9-B647-F72BA678122B}</Project>
+      <Name>ICSharpCode.NRefactory.CSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sdb.nuspec" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
